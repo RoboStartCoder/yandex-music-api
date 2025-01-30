@@ -20,7 +20,7 @@ class LyricsMajor(YandexMusicModel):
 
     id: int
     name: str
-    pretty_name: str
+    pretty_name: Optional['str'] = "Undefinded"
     client: Optional['ClientType'] = None
 
     def __post_init__(self) -> None:
